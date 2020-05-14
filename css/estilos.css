@@ -138,6 +138,7 @@
   .contato h2,
   .portfolio h2{
     font-size: 2em;
+  text-align: center;
   }
   
   .contato a{
@@ -154,10 +155,24 @@
     color:black;
   }
 
-  .contato a,
-  .conta{
-    background-color:white;
-    background-size: 25vw;
+  .contato a,{
     color: black;
     height: 25vh;
   }
+
+
+  //*.title{
+    transform: scale(.2) translate(50vh);
+    opacity: 0;
+    animation: linear 2s titleanimaçao forwards;
+  }
+
+  @keyframes titleanimaçao{
+     0%{
+
+     }
+     100%{
+      transform: scale(1) translate(0);
+      opacity: 1;
+     }
+  }//*
