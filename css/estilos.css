@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(http://avante.biz/wp-content/uploads/The-Matrix-Live-Wallpapers/The-Matrix-Live-Wallpapers-001.jpg);
+    background-size: auto 100vh;
+    font-family: 'Nova Mono', monospace;
+    backdrop-filter: blur(3px);
+    font-size: 10px;
+    color:white ;
+  }
+  
+     header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+  }
+  @media (min-size:600px){
+    body{
+      font-size: 20px;
+    }
+  }
+  
+  .menu{ 
+    background-color: #21d96a;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+
+  .contat a,
+  .portfolio a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contat a,
+  .portfolio a:hover {
+    text-decoration: underline;
+    color:red 
+  }
+  
+  .menu a{
+    text-decoration: none;
+  }
+  
+  
+  .menu a:hover {
+    text-decoration: underline;
+    color:red 
+  }
+  
+  .menu a{
+    display: block;
+  padding: 10px 20px;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li{
+    list-style: none;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    justify-content: center;
+    text-align: center;
+    color:white
+  }
+  
+  .site-title{
+    font-family: 'Indie Flower', cursive;
+    font-size:4em;
+  }
+  
+  .img-portfolio {
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  
+  .grid {
+    display: grid;
+    gap:2em;
+    justify-content: space-around;
+    
+  }
+  
+  @media (min-width: 560px ){
+    .grid{
+      grid-template-columns: 240px 240px;
+    }
+  }
+  
+  @media (min-width: 880px ){
+    .grid{
+      grid-template-columns: 240px 240px 240px;
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 6em - 31px);
+    }
+  }
+  
+  
+  .contato
+  .portfolio{
+    padding: 3em;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .portfolio figure{
+    text-align: center;
+  }
+
+  .contato h2,
+  .portfolio h2{
+    font-size: 2em;
+  }
+  
+  .contato a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contato a:hover {
+    text-decoration: underline;
+    color: red
+  }
