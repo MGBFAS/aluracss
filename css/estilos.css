@@ -5,10 +5,9 @@
   }
 
   body {
-    background-image: url(http://avante.biz/wp-content/uploads/The-Matrix-Live-Wallpapers/The-Matrix-Live-Wallpapers-001.jpg);
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
     background-size: auto 100vh;
     font-family: 'Nova Mono', monospace;
-    backdrop-filter: blur(3px);
     font-size: 10px;
     color:white ;
   }
@@ -32,19 +31,18 @@
   }
   
   .menu{ 
-    background-color: #21d96a;
+    background-color: #0a0b3b;
     position: fixed;
     width: 100vw;
     top: 0;
   }
 
-  .contat a,
   .portfolio a{
     text-decoration: none;
     color: white;
   }
   
-  .contat a,
+  .portfolio a:active,
   .portfolio a:hover {
     text-decoration: underline;
     color:red 
@@ -52,12 +50,16 @@
   
   .menu a{
     text-decoration: none;
+    color:white;
+    transition: background-color, color 1s;
   }
   
   
   .menu a:hover {
     text-decoration: underline;
-    color:red 
+    color:#0a0b3b;
+    background-color: white;
+
   }
   
   .menu a{
@@ -91,8 +93,15 @@
     width: 240px;
     object-fit: cover;
     border-radius: 25px;
+    transform: scale(1);
+    transition: transform 500ms;
+  }
+
+  .img-portfolio:hover {
+    transform: scale(1,2)
   }
   
+  .contato a,
   .grid {
     display: grid;
     gap:2em;
@@ -116,7 +125,6 @@
   }
   
   
-  .contato
   .portfolio{
     padding: 3em;
     min-height: 100vh;
@@ -138,7 +146,19 @@
     color: white;
   }
   
+  .contato a:active,
   .contato a:hover {
-    text-decoration: underline;
-    color: red
+    color: red;
+  }
+  .contato a{
+    font-size: 5em;
+    color:black;
+  }
+
+  .contato a,
+  .conta{
+    background-color:white;
+    background-size: 25vw;
+    color: black;
+    height: 25vw;
   }
