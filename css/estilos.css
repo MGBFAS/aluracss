@@ -5,8 +5,7 @@
   }
 
   body {
-    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
-    background-size: auto 100vh;
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     font-family: 'Nova Mono', monospace;
     font-size: 10px;
     color:white ;
